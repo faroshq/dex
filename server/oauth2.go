@@ -152,6 +152,7 @@ const (
 	responseTypeCodeToken        = "code token"          // "Regular" flow + Implicit flow
 	responseTypeCodeIDToken      = "code id_token"       // "Regular" flow + ID Token
 	responseTypeIDTokenToken     = "id_token token"      // ID Token + Implicit flow
+	responseTypeTokenCode        = "token code"          // Implicit flow + "Regular" flow
 	responseTypeCodeIDTokenToken = "code id_token token" // "Regular" flow + ID Token + Implicit flow
 )
 

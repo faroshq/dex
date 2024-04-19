@@ -236,7 +236,7 @@ func newServer(ctx context.Context, c Config, rotationStrategy rotationStrategy)
 		switch respType {
 		case responseTypeCode, responseTypeIDToken, responseTypeCodeIDToken:
 			// continue
-		case responseTypeToken, responseTypeCodeToken, responseTypeIDTokenToken, responseTypeCodeIDTokenToken:
+		case responseTypeToken, responseTypeCodeToken, responseTypeIDTokenToken, responseTypeCodeIDTokenToken, responseTypeTokenCode:
 			// response_type=token is an implicit flow, let's add it to the discovery info
 			// https://datatracker.ietf.org/doc/html/rfc6749#section-4.2.1
 			allSupportedGrants[grantTypeImplicit] = true
